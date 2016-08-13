@@ -147,12 +147,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/glebon/Documents/test_zinnia/static'
+STATIC_ROOT = '/home/gaellebon/travel-blog/static'
 
 
 #Media files
 
-MEDIA_ROOT = '/home/glebon/Documents/test_zinnia/media'
+MEDIA_ROOT = '/home/gaellebon/travel-blog/media'
 MEDIA_URL = '/media/'
 
 # @TODO set email backend for production
