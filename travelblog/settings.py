@@ -94,11 +94,16 @@ WSGI_APPLICATION = 'travelblog.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 # @TODO config for production.
 DATABASES = {
-    'travelblog': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': os.path.join(BASE_DIR, 'my.cnf'),
-        }
+        'NAME': 'gaellebon$travelblog',
+        'USER': 'gaellebon',
+        'PASSWORD': 'S8mA9Mn$6y7ngK$X',
+        'HOST': 'gaellebon.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+        # 'OPTIONS': {
+        #     'read_default_file': os.path.join(BASE_DIR, 'my.cnf'),
+        # }
     }
 }
 
