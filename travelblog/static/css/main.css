@@ -8,8 +8,9 @@ html,body{
 
 
 body{
+    padding-bottom: 50px;
 	
-	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
 	font-family: 'Reem Kufi', sans-serif;
 	/*font-family: 'Fira Sans', sans-serif;*/
 
@@ -65,28 +66,7 @@ hr{
 	box-shadow: 0px 5px 10px;
 }
 
-.container-content:before{
-	display: inline-block;
-	
-  box-shadow: -15px 0 5px -15px inset;
-  content: " ";
-  height: 100%;
-  left: -15px;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
 
-.container-content:after{
-	display: inline-block;	
-  box-shadow: 15px 0 5px -15px inset;
-  content: " ";
-  height: 100%;
-  right: -15px;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
 
 .footer{
 	position: absolute;
@@ -112,10 +92,33 @@ hr{
 	.main-navbar .navbar-nav>li.active>.nav-link{
 		border-bottom: 2px solid rgba(228,228,217,1);
 	}
+
+	.container-content:before{
+	display: inline-block;
+	
+  box-shadow: -15px 0 5px -15px inset;
+  content: " ";
+  height: 100%;
+  left: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+.container-content:after{
+	display: inline-block;	
+  box-shadow: 15px 0 5px -15px inset;
+  content: " ";
+  height: 100%;
+  right: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media (min-width: @screen-md-min) {}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }

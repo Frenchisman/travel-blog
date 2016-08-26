@@ -1,0 +1,41 @@
+.navbar-blog{
+	padding-left: 15px;
+}
+
+.navbar-blog>a:before{
+	content: ">";
+}
+.navbar-blog .form-group{
+	float:left;
+	margin-right: 15px;
+}
+
+.navbar-blog .navbar-form{
+	/* Original mt/mb = 8px */
+	margin: 0 -15px; 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.navbar-blog{
+		padding-left: 0;
+	}
+
+	.navbar-blog>a:before{
+		content: "";
+	}
+
+	.navbar-blog-form{
+		margin-left: 15px;
+	}
+
+	.navbar-blog .navbar-form{
+		margin: 8px -15px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

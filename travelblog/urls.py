@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^management/', admin.site.urls),
     # Static Pages
     url(r'^$', TemplateView.as_view(
-        template_name='index.html'), name='index'),
+        template_name='travelblog/index.html'), name='index'),
     # Photo gallery
     url(r'^galleries/', include('galleries.urls')),
     # Blog
