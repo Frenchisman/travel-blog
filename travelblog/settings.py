@@ -92,7 +92,6 @@ WSGI_APPLICATION = 'travelblog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-# @TODO config for production.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
