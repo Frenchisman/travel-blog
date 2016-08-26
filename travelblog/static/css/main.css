@@ -8,15 +8,25 @@ html,body{
 
 
 body{
-	background: #D1EDD6;
+	
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Reem Kufi', sans-serif;
 	/*font-family: 'Fira Sans', sans-serif;*/
 
+
+background: #215f00; /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #215f00 , #e4e4d9); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #215f00 , #e4e4d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
 }
 
 hr{
-	border-color: #318000;
+	border-color: #215f00;
+}
+
+.navbar-brand{
+	color: rgba(228,228,217,0.7);
 }
 
 .navbar-nav{
@@ -29,20 +39,20 @@ hr{
 }
 
 .main-navbar .navbar-nav>li.active>.nav-link{
-		color: rgba(126,242,147,1);
+		color: rgba(228,228,217,1);
 		background: rgba(255,255,255,0.2);
 }
 
 .main-navbar .navbar-nav>li>.nav-link{
 	border-bottom: 2px solid rgba(0,0,0,0);
-	color: rgba(126,242,147,0.5);
+	color: rgba(228,228,217,0.7);
 
 }
 
 
 .main-navbar .navbar-nav>li>.nav-link:hover{
-	border-bottom: 2px solid rgba(126,242,147,1);
-	color: rgba(126,242,147,1);
+	border-bottom: 2px solid rgba(228,228,217,1);
+	color: rgba(228,228,217,1);
 	transition: 0.3s all;
 }
 
@@ -100,8 +110,7 @@ hr{
 	}
 
 	.main-navbar .navbar-nav>li.active>.nav-link{
-		color: rgba(126,242,147,1);
-		border-bottom: 2px solid rgba(126,242,147,1);
+		border-bottom: 2px solid rgba(228,228,217,1);
 	}
 }
 
