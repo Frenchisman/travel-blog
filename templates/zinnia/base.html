@@ -2,7 +2,6 @@
 {% load i18n %}
 {% load zinnia %}
 {% load static %}
-{# @TODO Finish this template with skeleton.html and base.html from zinnia_bootstrap #}
 {% block meta-keywords %}{% get_tags as entry_tags %}{{ entry_tags|join:", "}}{% endblock meta-keywords %}
 
 {% block meta %}
@@ -56,11 +55,19 @@
   
 {% endblock page_title %}
 
-{% block content %}
+  
 {% block breadcrumbs %}
+<div class="row">
+<div id="breadcrumbs" class="hfeed col-xs-12 col-sm-12 col-md-12 col-lg-12">
   {% trans "Blog" as root_name %}
   {% zinnia_breadcrumbs root_name %}
+</div>
+</div>
+<hr class="hr-breadcrumbs">
 {% endblock breadcrumbs %}
+
+
+{% block content %}
 {% endblock content %}
 
 
@@ -87,10 +94,6 @@
   </h3>
   {% get_authors %}
 </aside>
-<aside id="widget-calendar" class="widget">
-  <h3>{% trans "Calendar" %}</h3>
-  {% get_calendar_entries %}
-</aside>
 <aside id="widget-tags" class="widget">
   <h3>
     <a href="{% url 'zinnia:tag_list' %}">{% trans "Tags" %}</a>
@@ -104,6 +107,10 @@
 <aside id="widget-archives" class="widget">
   <h3>{% trans "Archives" %}</h3>
   {% get_archives_entries_tree %}
+</aside>
+<aside id="widget-calendar" class="widget">
+  <h3>{% trans "Calendar" %}</h3>
+  {% get_calendar_entries %}
 </aside>
 {% if user.is_authenticated %}
 <aside id="widget-tools" class="widget">

@@ -15,6 +15,27 @@
 	margin: 0 -15px; 
 }
 
+/* End Navbar */
+
+/*Breadcrumbs*/
+.breadcrumb{
+	margin-bottom: 0;
+	background: none;
+	margin-top: 10px;
+}
+
+.hr-breadcrumbs{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Content */
+
+.page-header{
+	margin-top: 20px;
+	border-bottom: 1px solid rgba(33,95,0, 0.2);
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.navbar-blog{

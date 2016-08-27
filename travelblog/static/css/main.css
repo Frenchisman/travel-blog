@@ -22,8 +22,19 @@ background: linear-gradient(to top, #215f00 , #e4e4d9); /* W3C, IE 10+/ Edge, Fi
 
 }
 
+a{
+	color: #00611C;
+}
+
+a:hover{
+	color: #00270C;
+	transition: 0.2s all;
+
+}
+
 hr{
 	border-color: #215f00;
+	border-color: rgb(33,95,0);
 }
 
 .navbar-brand{
