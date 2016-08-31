@@ -25,8 +25,10 @@ urlpatterns = [
     # Static Pages
     url(r'^$', TemplateView.as_view(
         template_name='travelblog/index.html'), name='index'),
+    url(r'^crew/', TemplateView.as_view(
+        template_name='travelblog/crew.html'), name='crew'),
     # Photo gallery
-    url(r'^galleries/', include('galleries.urls')),
+    url(r'^galleries/', include('galleries.urls'), name='galleries'),
     # Blog
     url(r'^blog/', include('zinnia.urls')),
     url(r'^comments/', include('django_comments.urls')),
