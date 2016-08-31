@@ -1,0 +1,42 @@
+.person-row{
+	margin-bottom: 10px;
+}
+
+.hr-crew{
+	border-color: rgba(33,95,0, 0.4);
+}
+
+img{
+   padding:7px;
+   border:2px solid rgba(33,95,0, 1);
+   background-color:#fff;
+   border-radius: 50%;
+}
+
+.photo{
+	margin:auto;
+	float: none!important;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.person-row{
+		margin-bottom: 20px;
+	}
+
+	.photo.pull-left{
+		float: left!important;
+	}
+	.photo.pull-right{
+		float:right!important;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

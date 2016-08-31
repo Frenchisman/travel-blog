@@ -104,7 +104,12 @@ hr{
 		border-bottom: 2px solid rgba(228,228,217,1);
 	}
 
-	.container-content:before{
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+		.container-content:before{
 	display: inline-block;
 	
   box-shadow: -15px 0 5px -15px inset;
@@ -127,9 +132,6 @@ hr{
   width: 15px;
 }
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
