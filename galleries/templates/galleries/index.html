@@ -7,8 +7,8 @@
 {% block content_title %}
 	Photos
 {% endblock content_title %}
-{% block content %}
-	
+{% block base_content %}
+	{# @TODO Random Pic#}
 {% if gallery_list %}
 	<ul>
 		{% for gallery in gallery_list %}
@@ -18,4 +18,4 @@
 {% else %}
 	<p>Aucune photo n'est disponible pour l'instant.</p>
 {% endif %}
-{% endblock content %}
+{% endblock base_content %}

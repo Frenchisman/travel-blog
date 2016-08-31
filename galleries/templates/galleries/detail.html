@@ -7,6 +7,8 @@
 <link rel="stylesheet" type="text/css" href="{% static 'PhotoSwipe/photoswipe.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'PhotoSwipe/default-skin/default-skin.css' %}">
 {# End PSWP CSS #}
+
+{# @TODO Gallery css. #}
 {% endblock extrastyle %}
 
 {% block title %}
@@ -17,7 +19,7 @@
 	<a href="{% url 'galleries:gallery_list' %}">Photos</a> > {{ gallery.title }}
 {% endblock content_title %}
 
-{% block content %}
+{% block base_content %}
 <div class="container">
 	<div class="gallery">
 		{% for photo in gallery.photo_set.all %}			    
@@ -98,7 +100,7 @@
 
 </div>
 </div>
-{% endblock content %}
+{% endblock base_content %}
 
 
 {% block extrascript %}

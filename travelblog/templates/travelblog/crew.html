@@ -1,0 +1,56 @@
+{% extends "travelblog/base.html" %}
+{% load static %}
+{% block title %}
+	{{ block.super }} Le Crew
+{% endblock title %}
+
+{% block meta %}{% endblock meta %}
+
+{% block extrastyle %}
+	<link rel="stylesheet" href="{% static "css/crew.css" %}">
+{% endblock extrastyle %}
+
+{% block content_title %}
+	Le Crew
+{% endblock content_title %}
+
+{% block base_content %}
+<div id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="row person-row">
+		<div class="photo pull-left col-xs-8 col-sm-4 col-md-3 col-lg-3"><img src="{% static "img/default_user.jpg" %}" class="img-responsive" alt=""></span></div>
+		<div class="presentation col-xs-12 col-sm-7 col-md-8 col-lg-9">
+			<div class="basic-info">Test</div>
+			<div class="description">Test</div>
+		</div>
+	</div>
+	<hr class="hr-crew">
+	<div class="row person-row">
+		<div class="photo pull-right col-xs-8 col-sm-4 col-md-3 col-lg-3"><img src="{% static "img/default_user.jpg" %}" class="img-responsive" alt=""></div>
+		<div class="presentation col-xs-12 col-sm-7 col-md-8 col-lg-9">
+			<div class="basic-info">Test</div>
+			<div class="description">Test</div>
+		</div>
+	</div>
+	<hr class="hr-crew">
+	<div class="row person-row">
+		<div class="photo pull-left col-xs-8 col-sm-4 col-md-3 col-lg-3"><img src="{% static "img/default_user.jpg" %}" class="img-responsive" alt=""></div>
+		<div class="presentation col-xs-12 col-sm-7 col-md-8 col-lg-9">
+			<div class="basic-info">Test</div>
+			<div class="description">Test</div>
+		</div>
+	</div>
+	<hr class="hr-crew">
+	<div class="row person-row">
+		<div class="photo pull-right col-xs-8 col-sm-4 col-md-3 col-lg-3"><img src="{% static "img/default_user.jpg" %}" class="img-responsive" alt=""></div>
+		<div class="presentation col-xs-12 col-sm-7 col-md-8 col-lg-9">
+			<div class="basic-info">Test</div>
+			<div class="description">Test</div>
+		</div>
+	</div>
+</div>
+	
+{% endblock base_content %}
+
+{% block extrascript %}
+	
+{% endblock extrascript %}
