@@ -3,14 +3,14 @@
 }
 
 .hr-crew{
-	border-color: rgba(33,95,0, 0.4);
+	border-color: rgba(255,255,255, 0.4);
 }
 
 img{
-   padding:7px;
-   border:2px solid rgba(33,95,0, 1);
+   padding:5px;
+   border:1px solid rgba(0,0,0, 1);
    background-color:#fff;
-   border-radius: 50%;
+   border-radius: 25%;
 }
 
 

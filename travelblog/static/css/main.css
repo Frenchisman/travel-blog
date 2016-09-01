@@ -41,11 +41,11 @@ a:hover{
 
 hr{
 	border-color: #215f00;
-	border-color: rgb(33,95,0);
+	border-color: rgb(255,255,255);
 }
 
-.navbar-brand{
-	color: rgba(228,228,217,0.7);
+.navbar-inverse .navbar-brand{
+	color: rgba(37,183,210,1);
 }
 
 .navbar-nav{
@@ -58,20 +58,20 @@ hr{
 }
 
 .main-navbar .navbar-nav>li.active>.nav-link{
-		color: rgba(228,228,217,1);
+		color: rgba(37,183,210,1);
 		background: rgba(255,255,255,0.2);
 }
 
 .main-navbar .navbar-nav>li>.nav-link{
 	border-bottom: 2px solid rgba(0,0,0,0);
-	color: rgba(228,228,217,0.7);
+	color: rgba(37,183,210,0.7);
 
 }
 
 
 .main-navbar .navbar-nav>li>.nav-link:hover{
-	border-bottom: 2px solid rgba(228,228,217,1);
-	color: rgba(228,228,217,1);
+	border-bottom: 2px solid rgba(37,183,210,1);
+	color: rgba(37,183,210,1);
 	transition: 0.3s all;
 }
 
@@ -108,7 +108,7 @@ hr{
 	}
 
 	.main-navbar .navbar-nav>li.active>.nav-link{
-		border-bottom: 2px solid rgba(228,228,217,1);
+		border-bottom: 2px solid rgba(37,183,210,1);
 	}
 
 
