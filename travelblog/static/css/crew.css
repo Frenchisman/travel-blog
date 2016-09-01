@@ -13,6 +13,10 @@ img{
    border-radius: 25%;
 }
 
+blockquote footer{
+	color: #FFF;
+}
+
 
 
 /* Extra small devices (phones, less than 768px) */
