@@ -36,6 +36,22 @@
 	border-bottom: 1px solid rgba(33,95,0, 0.2);
 }
 
+
+.btn-primary{
+	  background: #1a7e91;
+
+}
+
+.btn-primary:hover{
+	background: #1d91a7;
+	transition: 0.2s all;
+}
+
+.entries-calendar, .no-entries-calendar{
+	margin: auto;
+	border-spacing: 2px;
+	border-collapse: none;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.navbar-blog{

@@ -30,11 +30,12 @@ background: linear-gradient(to left, #fe8c00 , #f83600); /* W3C, IE 10+/ Edge, F
 }
 
 a{
-	color: #00611C;
+	color: #1a7e91;
 }
 
 a:hover{
-	color: #00270C;
+	color: #1d91a7;
+	text-decoration: none;
 	transition: 0.2s all;
 
 }
@@ -115,30 +116,33 @@ hr{
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-		.container-content:before{
-	display: inline-block;
-	
-  box-shadow: -15px 0 5px -15px inset;
-  content: " ";
-  height: 100%;
-  left: -15px;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
+@media (min-width: 992px) {
+	.container-content:before{
+  	  display: inline-block;
+	  box-shadow: -15px 0 5px -15px inset;
+	  content: " ";
+	  height: 100%;
+	  left: -15px;
+	  position: absolute;
+	  top: 0;
+	  width: 15px;
+	}
 
-.container-content:after{
-	display: inline-block;	
-  box-shadow: 15px 0 5px -15px inset;
-  content: " ";
-  height: 100%;
-  right: -15px;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
+	.container-content:after{
+		display: inline-block;	
+	  box-shadow: 15px 0 5px -15px inset;
+	  content: " ";
+	  height: 100%;
+	  right: -15px;
+	  position: absolute;
+	  top: 0;
+	  width: 15px;
+	}
+
+	.container-content{
+		background: rgba(255, 255, 255, 0.7);
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+@media (min-width: 1200px) { ... }

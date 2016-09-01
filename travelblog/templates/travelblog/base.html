@@ -64,7 +64,6 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="{% if request.resolver_match.view_name == 'index' %}active{% endif %}"><a href="{% url 'index' %}" class="nav-link">Accueil</a></li>
-              {# @TODO this page. #}
               <li class="{% if request.resolver_match.view_name == 'crew' %}active{% endif %}"><a href="{% url 'crew' %}" class="nav-link">Le Crew</a></li>
               <li class="{% if request.resolver_match.namespace == 'galleries' %}active{% endif %}"><a href="{% url 'galleries:gallery_list' %}" class="nav-link">Photos</a></li>
               <li class="{% if request.resolver_match.app_name == 'zinnia' %}active{% endif %}"><a href="/blog/" class="nav-link">Blog</a></li>
