@@ -13,10 +13,7 @@ img{
    border-radius: 50%;
 }
 
-.photo{
-	margin:auto;
-	float: none!important;
-}
+
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -25,13 +22,6 @@ img{
 @media (min-width: 768px) {
 	.person-row{
 		margin-bottom: 20px;
-	}
-
-	.photo.pull-left{
-		float: left!important;
-	}
-	.photo.pull-right{
-		float:right!important;
 	}
 }
 
