@@ -8,13 +8,18 @@
 
 img{
    padding:5px;
-   border:1px solid rgba(0,0,0, 1);
-   background-color:#fff;
+   border:1px solid #BDBDBD;
+   background-color:#FFF;
    border-radius: 25%;
+   box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);
+}
+
+.blockquote-reverse{
+	border-right: 5px solid #4CAF50;
 }
 
 blockquote footer{
-	color: #FFF;
+	color: #757575;
 }
 
 

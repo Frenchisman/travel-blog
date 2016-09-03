@@ -21,32 +21,32 @@ background: linear-gradient(to top, #215f00 , #e4e4d9); /* W3C, IE 10+/ Edge, Fi
  
 
 
-background: #fe8c00; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #fe8c00 , #f83600); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #fe8c00 , #f83600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-
+background: #FFE0B2; 
 
 }
 
 a{
-	color: #1a7e91;
+	color: #8BC34A;
 }
 
 a:hover{
-	color: #1d91a7;
+	color: #FFF;
 	text-decoration: none;
 	transition: 0.2s all;
 
 }
 
 hr{
-	border-color: #215f00;
-	border-color: rgb(255,255,255);
+	border-color: #BDBDBD;
+	/*border-color: rgb(255,255,255);*/
 }
 
 .navbar-inverse .navbar-brand{
-	color: rgba(37,183,210,1);
+	color: #212121;
+}
+
+.navbar-inverse{
+		border: none;
 }
 
 .navbar-nav{
@@ -54,25 +54,26 @@ hr{
 }
 
 .main-navbar{
-	background: rgba(0,0,0, 1);
-	box-shadow: 0 2px 5px 1px;
+	background: #FF9800;
+	/*box-shadow: 0 2px 5px 1px;*/
+	box-shadow: 0 3px 10px rgba(0,0,0,0.23);
 }
 
 .main-navbar .navbar-nav>li.active>.nav-link{
-		color: rgba(37,183,210,1);
-		background: rgba(255,255,255,0.2);
+		color: #4CAF50;
+		background: #FFE0B2;
 }
 
 .main-navbar .navbar-nav>li>.nav-link{
 	border-bottom: 2px solid rgba(0,0,0,0);
-	color: rgba(37,183,210,0.7);
+	color: #757575;
 
 }
 
 
 .main-navbar .navbar-nav>li>.nav-link:hover{
-	border-bottom: 2px solid rgba(37,183,210,1);
-	color: rgba(37,183,210,1);
+	border-bottom: 2px solid #4CAF50;
+	color: #4CAF50;
 	transition: 0.3s all;
 }
 
@@ -81,8 +82,9 @@ hr{
 .container-content{
 	position: relative;
 	margin-top: 52px;
-	background: rgba(255, 255, 255, 0.5);
-	box-shadow: 0px 5px 10px;
+	background: #FFF;
+	/*background: rgba(255, 255, 255, 0.5);*/
+	box-shadow: 0 3px 10px rgba(0,0,0,0.23)
 }
 
 
@@ -92,8 +94,9 @@ hr{
 	bottom: 0;
 	width: 100%;
 	height: 50px;
-	background: rgba(0,0,0, 0.6);
-	border-top: 1px solid #080808;
+	background: #4CAF50;
+	box-shadow: -10px 3px -10px rgba(0,0,0,0.23)
+	/*border-top: 1px solid #4CAF50;*/
 
 }
 
@@ -109,7 +112,7 @@ hr{
 	}
 
 	.main-navbar .navbar-nav>li.active>.nav-link{
-		border-bottom: 2px solid rgba(37,183,210,1);
+		border-bottom: 2px solid #4CAF50;
 	}
 
 
@@ -119,7 +122,7 @@ hr{
 @media (min-width: 992px) {
 	.container-content:before{
   	  display: inline-block;
-	  box-shadow: -15px 0 5px -15px inset;
+	  box-shadow: -15px 0 5px -15px inset rgba(0,0,0,0.23);
 	  content: " ";
 	  height: 100%;
 	  left: -15px;
@@ -130,7 +133,7 @@ hr{
 
 	.container-content:after{
 		display: inline-block;	
-	  box-shadow: 15px 0 5px -15px inset;
+	  box-shadow: 15px 0 5px -15px inset rgba(0,0,0,0.23);
 	  content: " ";
 	  height: 100%;
 	  right: -15px;
