@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'PhotoSwipe/default-skin/default-skin.css' %}">
 {# End PSWP CSS #}
 
-{# @TODO Gallery css. #}
+<link rel="stylesheet" href="{% static "galleries/css/gallery.css" %}">
 {% endblock extrastyle %}
 
 {% block title %}
@@ -22,13 +22,16 @@
 {% block base_content %}
 <div class="container">
 	<div class="gallery">
-		{% for photo in gallery.photo_set.all %}			    
+		{% for photo in gallery.photo_set.all %}
+		<div class="photo col-xs-12 col-sm-4 col-md-4 col-lg-3">
+			
 			<figure>
 				<img class="pswp-thumb" src="{{ MEDIA_URL }}{{photo.file_thumbnail}}" alt="{{ photo.alt_text }}" title="{{ photo.get_html_title }}" data-index-number="{{forloop.counter0}}" data-size="{{ photo.base_width }}x{{ photo.base_height }}" data-url="{{ photo.file }}" data-url-small="{{ photo.file_small }}">
 				{% if photo.caption %}
 					<figcaption>{{ photo.caption }}</figcaption>
 				{% endif %}
 			</figure>
+		</div>			    
 		{% endfor %}
 	</div>
 		

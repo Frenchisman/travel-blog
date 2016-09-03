@@ -42,10 +42,13 @@ INSTALLED_APPS = [
     'django_comments',
     'mptt',
     'tagging',
+    'ckeditor',
     'zinnia_bootstrap',
     'zinnia',
+    'zinnia_ckeditor',
     'galleries',
     'django_cleanup',
+    'disqus',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -156,3 +159,8 @@ MEDIA_URL = '/media/'
 
 # @TODO set email backend for production
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Disqus Comments
+
+DISQUS_API_KEY = 'p8gOpdKbMnoZj8Tirbd7ABhyzY41n62wzJMreWoXhs7BeYt8pLfGdP5IXBChunbm'
+DISQUS_WEBSITE_SHORTNAME = 'chezguevara-fr'

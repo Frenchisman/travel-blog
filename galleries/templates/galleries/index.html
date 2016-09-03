@@ -1,4 +1,8 @@
 {% extends "travelblog/base.html" %}
+{% load static %}
+{% block extrastyle %}
+	<link rel="stylesheet" href="{% static "galleries/css/gallery.css" %}">
+{% endblock extrastyle %}
 
 {% block title %}
 	{{ block.super }} Photos
@@ -9,23 +13,76 @@
 {% endblock content_title %}
 {% block base_content %}
 <div class="content col-xs-12">
-	
-	{# @TODO Random Pic and css for this page#}
-{% if random_photo %}
+	{% if random_photo %}
 	<div class="row">
-		<div class="random-photo col-xs-12 col-sm-9 col-md-6 col-lg-3">
-			<a href="/galleries/{{ random_photo.gallery.id }}"><img src="{{ MEDIA_URL }}{{ random_photo.file_thumbnail }}" alt="{{ photo.alt_text }}" class="img-responsive"></a>
+		<div class="random-photo-title col-xs-12">
+			<h3>Une photo au hasard ... </h3>
+		</div>
+		<div class="random-photo col-xs-12 col-sm-6">
+			<a href="/galleries/{{ random_photo.gallery.id }}"><img src="{{ MEDIA_URL }}{{ random_photo.file_thumbnail }}" alt="{{ photo.alt_text }}" class="img-responsive" title="{{random_photo.get_html_title}}"></a>
+		</div>
+		<div class="random-photo-info col-xs-12 col-sm-6">
+			<p>
+				Gallerie : {{random_photo.gallery.title}}
+			</p>
+			<p>				
+				{% if random_photo.title %}
+					Titre : {{random_photo.title}}
+				{% else %}
+					Cette Photo n'a pas de titre.
+				{% endif %}
+			</p>
+			<p>	
+				{% if random_photo.caption %}
+					{{random_photo.caption}}
+				{% else %}
+					Cette photo n'a pas de description.
+				{% endif %}
+			</p>
 		</div>
 	</div>
+	<hr>
 {% endif %}	
-{% if gallery_list %}
-	<ul>
-		{% for gallery in gallery_list %}
-		<li><a href="/galleries/{{ gallery.id }}/">{{ gallery.title }}</a></li>
-		{% endfor %}
-	</ul>
-{% else %}
-	<p>Aucune photo n'est disponible pour l'instant.</p>
-{% endif %}
+	<div class="row">
+		{% if gallery_list %}
+			<div class="gallery-list-title col-xs-12">
+				<h3>
+					Liste des Galleries
+				</h3>
+			</div>
+			<div class="gallery-list-list col-xs-12">				
+				<table id="gallery-list" class="gallery-list tablesorter">
+				<thead>
+					<tr>
+						<th class="col1">Nom</th>
+						<th class="col2">Description</th>
+						<th class="col3">Date de Modification</th>
+					</tr>
+				</thead>
+					{% for gallery in gallery_list %}
+				<tbody>
+					
+					<tr class="{% cycle 'odd' 'even' %} gallery-row">
+						<td class="col1">
+							<a href="/galleries/{{ gallery.id }}/">{{ gallery.title }}</a>
+						</td>
+						<td class="col2">
+							<span class="description">{{gallery.description}}</span>
+						</td> 
+						<td class="col3">
+							<span class="updated">{{gallery.date}}</span>
+						</td>
+					</tr>
+				</tbody>
+					{% endfor %}
+				</table>
+			</div>
+			{% else %}
+			<p>Aucune photo n'est disponible pour l'instant.</p>
+		{% endif %}
+	</div>
 </div>
 {% endblock base_content %}
+
+{% block extrascript %}
+{% endblock extrascript %}

@@ -1,0 +1,90 @@
+.random-photo-title{
+	text-align: center;
+}
+
+.random-photo-title h3, .gallery-list-title h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.random-photo-info{
+	text-align: center;
+	
+}
+
+.random-photo{
+	text-align: center;
+}
+.random-photo>a{
+	display: inline-block;
+	
+}
+
+.random-photo img, .photo img{
+	border: 1px solid #212121;
+	background-color: #FFF;
+	padding: 5px;
+	border-radius: 2px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);
+	margin-bottom: 10px;
+}
+
+.gallery-list-title{
+	text-align: center;
+}
+
+.gallery-list{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.gallery-list li{
+	display: inline-block;
+	padding: 2px 5px;
+	width: 100%;
+}
+
+.gallery-list .even{
+	background: #FFE0B2;
+}
+
+.gallery-list th, .gallery-list td{
+	padding: 2px 5px;
+}
+
+.gallery-list .col2{
+	display: none;
+}
+
+/* Detail */
+.photo {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.random-photo-info{
+		padding-top: 6px;
+		text-align: left;
+		border-left : 2px solid #BDBDBD;
+	}
+
+	.gallery-list .col2{
+		display: initial;
+	}
+	
+	.photo{
+		min-height: 250px;
+	}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

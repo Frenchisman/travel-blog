@@ -94,6 +94,13 @@ hr{
 	margin: 0px -15px;
 }
 
+.nav .btn-primary, .nav .btn-default{
+	  background: #FFF;
+	  border: none;
+	  color: #212121;
+
+}
+
 .main-navbar{
 	background: #FF9800;
 	/*box-shadow: 0 2px 5px 1px;*/

@@ -1,5 +1,5 @@
 {# Entry Template for front page #}
-{% load comments i18n zinnia %}
+{% load i18n zinnia %}
 <article id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% block entry-header %}
   <header class="entry-header page-header">
