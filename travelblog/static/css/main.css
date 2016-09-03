@@ -25,12 +25,37 @@ background: #FFE0B2;
 
 }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 a{
-	color: #8BC34A;
+	color: #4CAF50;
 }
 
 a:hover{
-	color: #FFF;
+	color: #FF9800;
 	text-decoration: none;
 	transition: 0.2s all;
 
@@ -41,7 +66,23 @@ hr{
 	/*border-color: rgb(255,255,255);*/
 }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: #BDBDBD;
+}
+
+.navbar-inverse .navbar-toggle{
+	border: none;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background: #4CAF50;
+}
+.nav > li > a.nav-link{
+	padding: 5px 10px;
+}
+
 .navbar-inverse .navbar-brand{
+	padding: 16px;
 	color: #212121;
 }
 
@@ -59,21 +100,35 @@ hr{
 	box-shadow: 0 3px 10px rgba(0,0,0,0.23);
 }
 
+i.navbar-icon, .nav-link>span{
+	line-height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-link>span{
+	padding-left: 10px;
+}
+
+
+
+
 .main-navbar .navbar-nav>li.active>.nav-link{
-		color: #4CAF50;
-		background: #FFE0B2;
+		color: #212121;
+		background: #4CAF50;
 }
 
 .main-navbar .navbar-nav>li>.nav-link{
 	border-bottom: 2px solid rgba(0,0,0,0);
-	color: #757575;
+	color: #212121;
 
 }
 
 
 .main-navbar .navbar-nav>li>.nav-link:hover{
 	border-bottom: 2px solid #4CAF50;
-	color: #4CAF50;
+	background: #4CAF50;
+	color: #212121;
 	transition: 0.3s all;
 }
 
@@ -94,15 +149,12 @@ hr{
 	bottom: 0;
 	width: 100%;
 	height: 50px;
-	background: #4CAF50;
-	box-shadow: -10px 3px -10px rgba(0,0,0,0.23)
+	background: #FF9800;
+	box-shadow: -10px 3px -10px rgba(0,0,0,0.23);
 	/*border-top: 1px solid #4CAF50;*/
 
 }
 
-.container-footer{
-	color: #FFF;
-}
 
 
 /* Small devices (tablets, 768px and up) */
@@ -111,10 +163,24 @@ hr{
 		margin: 0;
 	}
 
-	.main-navbar .navbar-nav>li.active>.nav-link{
-		border-bottom: 2px solid #4CAF50;
+	a.nav-link{
+		text-align: center;
 	}
 
+
+.nav-link>span{
+	padding-left: 0;
+}
+
+	i.navbar-icon, .nav-link>span{
+	line-height: 1;
+	display: block;
+	vertical-align: middle;
+}
+
+	.navbar-icon{
+	display: block;
+}
 
 }
 

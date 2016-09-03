@@ -13,6 +13,16 @@
 .navbar-blog .navbar-form{
 	/* Original mt/mb = 8px */
 	margin: 0 -15px; 
+	border: none;
+	
+}
+
+.navbar-inverse .navbar-nav > li.navbar-blog > a{
+	color: #212121;
+}
+
+.navbar-inverse .navbar-nav > li.navbar-blog:hover{
+	background: #4CAF50;
 }
 
 /* End Navbar */
@@ -37,25 +47,49 @@
 }
 
 
-.btn-primary{
-	  background: #1a7e91;
+.btn-primary, .btn-default{
+	  background: #4CAF50;
+	  border: none;
+	  color: #212121;
 
 }
 
-.btn-primary:hover{
-	background: #1d91a7;
+.btn-primary:hover, .btn-default:hover{
+	background: #FF9800;
+	color: #757575;
 	transition: 0.2s all;
+}
+
+.search .form-group{
+	padding: 0px 10px;
+}
+
+.label-info{
+	background: #FF9800;
+	margin-left: 10px;
+}
+
+.list-group-item{
+	border-color: #BDBDBD;
+}
+
+ul.archives-entries-tree, ul.tag-cloud{
+	color: #BDBDBD;
 }
 
 .entries-calendar, .no-entries-calendar{
 	margin: auto;
-	border-spacing: 2px;
-	border-collapse: none;
+	border-spacing: 4px;
+	border-collapse: separate;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.navbar-blog{
 		padding-left: 0;
+	}
+
+	li.navbar-blog > a{
+		padding: 15px 5px;
 	}
 
 	.navbar-blog>a:before{
@@ -69,10 +103,20 @@
 	.navbar-blog .navbar-form{
 		margin: 8px -15px;
 	}
+
+	.navbar-form .form-control{
+		width: 150px;
+		
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+@media (min-width: @screen-md-min) {
+	.navbar-form .form-control{
+		width: auto;
+		
+	}
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
