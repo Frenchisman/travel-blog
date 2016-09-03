@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 
 from django.utils.translation import ugettext as _
 
+import random
 from .models import Gallery, Photo
 
 # Create your views here.
@@ -9,8 +10,15 @@ from .models import Gallery, Photo
 
 def gallery_list(request):
     gallery_list = Gallery.objects.order_by('-date')
+
+    #Add a random photo to context to display on gallery list page.
+
+    photo_list = Photo.objects.all()
+    random_photo = photo_list[random.randint(0, len(photo_list)-1)]
+
     context = {
-        'gallery_list': gallery_list
+        'gallery_list': gallery_list,
+        'random_photo': random_photo,
     }
     return render(request, 'galleries/index.html', context)
 

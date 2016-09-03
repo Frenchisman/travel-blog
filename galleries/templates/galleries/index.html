@@ -8,7 +8,16 @@
 	Photos
 {% endblock content_title %}
 {% block base_content %}
+<div class="content col-xs-12">
+	
 	{# @TODO Random Pic and css for this page#}
+{% if random_photo %}
+	<div class="row">
+		<div class="random-photo col-xs-12 col-sm-9 col-md-6 col-lg-3">
+			<a href="/galleries/{{ random_photo.gallery.id }}"><img src="{{ MEDIA_URL }}{{ random_photo.file_thumbnail }}" alt="{{ photo.alt_text }}" class="img-responsive"></a>
+		</div>
+	</div>
+{% endif %}	
 {% if gallery_list %}
 	<ul>
 		{% for gallery in gallery_list %}
@@ -18,4 +27,5 @@
 {% else %}
 	<p>Aucune photo n'est disponible pour l'instant.</p>
 {% endif %}
+</div>
 {% endblock base_content %}

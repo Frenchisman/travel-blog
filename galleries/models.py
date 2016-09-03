@@ -4,7 +4,7 @@ import os
 from PIL import Image as Img
 from django.db import models
 from datetime import date
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from django.core.files.uploadedfile import InMemoryUploadedFile
 
 # Create your models here.
@@ -79,6 +79,9 @@ class Photo(models.Model):
     base_height = models.IntegerField(default=100, blank=True)
     base_width = models.IntegerField(default=100, blank=True)
     gallery = models.ForeignKey(Gallery, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
 
     def get_html_title(self):
         """
