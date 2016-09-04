@@ -9,6 +9,11 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 SECURE_SSL_REDIRECT = False
+USE_X_FORWARDED_HOST = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+SECURE_HSTS_SECONDS = 0
+
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
