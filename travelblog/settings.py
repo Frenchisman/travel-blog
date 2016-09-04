@@ -28,6 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['www.chezguevara.fr',]
 
 SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
 
 # Application definition
 
