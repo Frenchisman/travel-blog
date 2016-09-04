@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['www.chezguevara.fr',]
 
+SECURE_SSL_REDIRECT = True
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -8,6 +8,8 @@ DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
+SECURE_SSL_REDIRECT = False
+
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
