@@ -62,6 +62,11 @@
 	padding-bottom: 20px;
 }
 
+.photo img{
+	cursor: pointer;
+	
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.random-photo-info{
