@@ -137,6 +137,18 @@ i.navbar-icon, .nav-link>span{
 	box-shadow: 0 3px 10px rgba(0,0,0,0.23)
 }
 
+.group-presentation img{
+		border: 1px solid #212121;
+	background-color: #FFF;
+	padding: 5px;
+	border-radius: 2px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);
+	margin-bottom: 10px;
+}
+
+.recent-entries-title{
+	text-align: center;
+}
 
 
 .footer{
@@ -202,6 +214,10 @@ footer a:hover{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+	h1{
+		font-size: 72px;
+	}	
 	.container-content:before{
   	  display: inline-block;
 	  box-shadow: -15px 0 5px -15px inset rgba(0,0,0,0.23);

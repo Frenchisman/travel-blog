@@ -1,5 +1,5 @@
 {% extends "travelblog/base.html" %}
-
+{% load staticfiles %}
 {% block title %}
 	{{ block.super }} Accueil
 {% endblock title %}
@@ -10,14 +10,34 @@
 <div class="container">
 	
 	<div class="row">
-		<div class="col-md-6 col-xs-12">
-			<h2>Test</h2>
-			<p>Ceci est un test.</p>
-		</div>
-		<div class="col-md-6 col-xs-12">
-			<h2>Test</h2>
-			<p>Ceci est un 2eme test.</p>
-		</div>
+		 <div class="group-presentation col-xs-12 col-lg-10 col-lg-push-1">
+		 	<img src="{% static "img/groupe_3.jpg" %}" alt="Photo du Groupe" class="img-responsive">
+		 	<p>
+		 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dicta temporibus, eius ratione sapiente velit repudiandae ad saepe error nulla vel sint perspiciatis reiciendis quisquam, hic quidem esse repellendus laboriosam.
+		 	</p>
+		 	<p>
+		 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nisi, eius amet nostrum eos! A sit eum, iusto, earum veritatis, cum facilis fuga vitae nobis at saepe doloremque laborum repudiandae.
+		 	</p>
+		 </div>
+	 </div>
+		 <hr>
+	 <div class="row">
+	 	<div class="recent-entries-title col-xs-12">
+	 		<h2>Placeholder Title</h2>
+	 	</div>
+		 <div class="last-entry col-xs-12 col-sm-6">
+		 	<p>
+		 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cumque tenetur suscipit provident veniam eius impedit atque, blanditiis illo, illum soluta nulla error at quidem hic laboriosam veritatis perspiciatis molestias.
+		 	</p>
+		 	<p>
+		 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quod ipsam quaerat saepe dolorum ullam eveniet temporibus architecto, facilis velit ad vel aperiam sed illum dolor? Ad at, deserunt dignissimos.
+		 	</p>
+		 </div>
+		 <div class="last-entry col-xs-12 col-sm-6">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident adipisci repudiandae qui, ratione sit, at consequatur ipsam voluptatem rerum illum exercitationem id commodi laboriosam quidem minima, eos sed magnam.</p>
+		 <p>Ad minima, nostrum provident, sed accusamus mollitia. Dolore ipsum eveniet esse, at, autem minus distinctio, consectetur deserunt quas cumque magni. Iusto, maiores, cumque. Sed, eum! Ipsum quae vero tenetur mollitia?</p>
+		 </div>
+	 </div>
 	</div>
 </div>
 {% endblock base_content %}
