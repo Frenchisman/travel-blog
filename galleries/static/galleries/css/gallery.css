@@ -29,6 +29,10 @@
 	margin-bottom: 10px;
 }
 
+p.no-photos{
+	text-align: center;
+}
+
 .gallery-list-title{
 	text-align: center;
 }

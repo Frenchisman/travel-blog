@@ -13,13 +13,17 @@ def gallery_list(request):
 
     #Add a random photo to context to display on gallery list page.
 
-    photo_list = Photo.objects.all()
-    random_photo = photo_list[random.randint(0, len(photo_list)-1)]
+
 
     context = {
         'gallery_list': gallery_list,
-        'random_photo': random_photo,
     }
+
+    photo_list = Photo.objects.all()
+    if(len(photo_list) != 0):
+        random_photo = photo_list[random.randint(0, len(photo_list)-1)]
+        context+={'random_photo':random_photo,}
+
     return render(request, 'galleries/index.html', context)
 
 
