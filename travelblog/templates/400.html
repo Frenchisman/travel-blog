@@ -1,0 +1,21 @@
+{% extends "travelblog:travelblog/base.html" %}
+
+{% block extrastyle %}
+	
+{% endblock extrastyle %}
+
+{% block title %}
+	Erreur 400 
+{% endblock title %}
+
+{% block base_content %}
+	<div class="container">
+		<div class="error-message col-xs-12">
+			<p>Nous n'avons pas compris votre requete !</p>
+			<p>Voici quelques liens utiles :
+				<a href="{% url 'index' %}">Accueil du Site</a>
+				<a href="/blog">Le Blog</a>
+			</p>
+		</div>
+	</div>
+{% endblock base_content %}

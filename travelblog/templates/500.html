@@ -1,0 +1,21 @@
+{% extends "travelblog:travelblog/base.html" %}
+
+{% block extrastyle %}
+	
+{% endblock extrastyle %}
+
+{% block title %}
+	Erreur 500 
+{% endblock title %}
+
+{% block base_content %}
+	<div class="container">
+		<div class="error-message col-xs-12">
+			<p>Le serveur semble avoir un problème ! Veuillez réessayer d'accéder à la page dans quelques minutes. Si le problème persiste, veuillez contacter l'administrateur du site a l'adresse suivante : webmaster[arobase]chezguevara[point]fr</p>
+			<p>Voici quelques liens utiles quand <s>le stagiaire</s> les ingénieurs auront réparé le serveur :
+				<a href="{% url 'index' %}">Accueil du Site</a>
+				<a href="/blog">Le Blog</a>
+			</p>
+		</div>
+	</div>
+{% endblock base_content %}
