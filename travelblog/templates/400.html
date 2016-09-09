@@ -15,9 +15,12 @@
 		<div class="error-message col-xs-12">
 			<p>Nous n'avons pas compris votre requete !</p>
 			<p>Voici quelques liens utiles :
-				<a href="{% url 'index' %}">Accueil du Site</a>
-				<a href="/blog">Le Blog</a>
+
 			</p>
+			<ul>
+					<li><a href="{% url 'index' %}">Accueil du Site</a></li>
+					<li><a href="/blog">Le Blog</a></li>
+				</ul>
 		</div>
 	</div>
 {% endblock base_content %}

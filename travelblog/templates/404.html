@@ -15,9 +15,11 @@
 		<div class="error-message col-xs-12">
 			<p>La page que vous cherchez est perdue au fin fond de la forêt amazonienne, ou bien n'existe tout simplement pas !</p>
 			<p>Pour que vous ne vous égariez pas en essayant de la trouver, voici quelques liens utiles :
-				<a href="{% url 'index' %}">Accueil du Site</a>
-				<a href="/blog">Le Blog</a>
-			</p>
+				</p>
+				<ul>
+					<li><a href="{% url 'index' %}">Accueil du Site</a></li>
+					<li><a href="/blog">Le Blog</a></li>
+				</ul>
 		</div>
 	</div>
 {% endblock base_content %}
