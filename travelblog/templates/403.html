@@ -5,9 +5,10 @@
 {% endblock extrastyle %}
 
 {% block title %}
-	Erreur 403
+	{{ block.super }} Erreur 403 
 {% endblock title %}
 
+{% block content_title %}Erreur 403{% endblock content_title %}
 {% block base_content %}
 	<div class="container">
 		<div class="error-message col-xs-12">
