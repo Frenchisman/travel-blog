@@ -22,7 +22,7 @@ def gallery_list(request):
     photo_list = Photo.objects.all()
     if(len(photo_list) != 0):
         random_photo = photo_list[random.randint(0, len(photo_list)-1)]
-        context+={'random_photo':random_photo,}
+        context.update({'random_photo':random_photo,})
 
     return render(request, 'galleries/index.html', context)
 
